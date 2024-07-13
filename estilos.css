@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+	list-style: none;
+}
+:root {
+    --color-hover: #ee6130;
+    --color-hover-claro: #ee613033;
+    --color-texto: #000;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header {
+    box-shadow: 0px 6px 8px -6px #000;
+}
+
+nav a {
+    display: flex;
+    width: 4rem;
+    margin: 0.25rem 1.2rem 0.25rem 0;
+    color: var(--color-texto);
+    align-items: end;
+}
+
+#cuenta-carrito {
+    background-color: var(--color-hover);
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    position: absolute;
+    font-size: .875rem;
+}
+
+.carrito {
+    width: 2rem;
+}
+
+.estilos-comunes {
+    color: black;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.botones button {
+    background-color: #999999;
+    width: 5rem;
+    border: none;
+    border-radius: .25rem;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem 2rem 0.5rem 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carrusel li {
+    display: none;
+    flex: 0 0 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel li img {
+    width: 100%;
+    height: 480px;
+    border-radius: 1rem;
+}
+
+.carrusel li.active {
+    display: block;
+}
+
+#main-politicas {
+    
+    & section {
+        padding: 2rem 1rem;
+        margin: auto;
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+    & h1 {
+        text-align: center;
+        margin: 0.5rem 0;
+        font-size: 2rem;
+    }
+
+    & h2 {
+        font-size: 1.4rem;
+        margin: 1rem 0.25rem;
+    }
+
+    & p {
+        text-align: justify;
+    }
+}
+
+#footer { 
+    margin-top: auto;
+    text-align: center;
+    box-shadow: 0px -6px 8px -6px #000;
+
+    & p {
+        margin: 0.5rem;
+    }
+}
