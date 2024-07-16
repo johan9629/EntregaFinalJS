@@ -127,3 +127,7 @@ nav a {
         margin: 0.5rem;
     }
 }
+
+.escondido {
+    display: none;
+}

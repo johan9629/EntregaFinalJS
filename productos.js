@@ -8,10 +8,11 @@ crearTarjetasProductos = (productos)=> {
         nuevaCamiseta.innerHTML = `
             <img src=${producto.img}>
             <h2>${producto.nombre}</h2>
-            <p>${producto.precio}</p>
+            <p>$${producto.precio}</p>
             <button>Agregar al carrito </button>
             `
         docfrag.appendChild(nuevaCamiseta);
+        nuevaCamiseta.querySelector("button").addEventListener("click",()=>{agregarAlCarrito(producto) });
     })
     contenedorTarjetas.appendChild(docfrag);
 }

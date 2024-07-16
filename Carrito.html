@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./carrito.css">
     <title>Entrega Final</title>
 </head>
 <body>
@@ -11,12 +12,22 @@
 
     </header>
     <main id="main-productos">
-
+        <p id="carrito-vacio">Ups! No hay productos en el carrito <a href="./productos.html">Agrega algunos</a></p>
+        <section id="productos-container">
+        </section>
+        <section id="totales">
+            <p>Total unidades: <span id="unidades">0</span></p>
+            <p>Total precio: $<span id="precio">0</span> </p>
+            <button disabled>Comprar</button>
+            <button id="reiniciar">Reiniciar carrito</button>
+        </section>
     </main>
     <footer id="footer">
         <p>Esto fue creado para el curso de JS de coder</p>
         <p>Hecho por Johan Steven Gonzalez Gil</p>
     </footer>
     <script src="nav.js"></script>
+    <script src="carritoConteo.js"></script>
+    <script src="carrito.js"></script>
 </body>
 </html>
